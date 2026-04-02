@@ -1,0 +1,444 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 40 | Scripts: 0 | Modules: 0 | Tags: 1
+local CollectionService = game:GetService("CollectionService");
+local G2L = {};
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui
+G2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["ScreenGui_1"]["IgnoreGuiInset"] = true;
+G2L["ScreenGui_1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["ScreenGui_1"]["ResetOnSpawn"] = false;
+
+-- Tags
+CollectionService:AddTag(G2L["ScreenGui_1"], [[main]]);
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer
+G2L["layer_2"] = Instance.new("Frame", G2L["ScreenGui_1"]);
+G2L["layer_2"]["BorderSizePixel"] = 0;
+G2L["layer_2"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
+G2L["layer_2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["layer_2"]["Size"] = UDim2.new(0.44949, 0, 0.55887, 0);
+G2L["layer_2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["layer_2"]["Name"] = [[layer]];
+G2L["layer_2"]["BackgroundTransparency"] = 0.7;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.UICorner
+G2L["UICorner_3"] = Instance.new("UICorner", G2L["layer_2"]);
+G2L["UICorner_3"]["CornerRadius"] = UDim.new(0.03, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main
+G2L["main_4"] = Instance.new("Frame", G2L["layer_2"]);
+G2L["main_4"]["BorderSizePixel"] = 0;
+G2L["main_4"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
+G2L["main_4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["main_4"]["Size"] = UDim2.new(0.97394, 0, 0.96954, 0);
+G2L["main_4"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["main_4"]["Name"] = [[main]];
+G2L["main_4"]["BackgroundTransparency"] = 0.7;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.description
+G2L["description_5"] = Instance.new("Frame", G2L["main_4"]);
+G2L["description_5"]["BorderSizePixel"] = 0;
+G2L["description_5"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+G2L["description_5"]["Size"] = UDim2.new(0.50502, 0, 0.6911, 0);
+G2L["description_5"]["Position"] = UDim2.new(0.48829, 0, 0.12565, 0);
+G2L["description_5"]["Name"] = [[description]];
+G2L["description_5"]["BackgroundTransparency"] = 0.6;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.description.UICorner
+G2L["UICorner_6"] = Instance.new("UICorner", G2L["description_5"]);
+G2L["UICorner_6"]["CornerRadius"] = UDim.new(0.03, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.description.ScrollingFrame
+G2L["ScrollingFrame_7"] = Instance.new("ScrollingFrame", G2L["description_5"]);
+G2L["ScrollingFrame_7"]["BorderSizePixel"] = 0;
+G2L["ScrollingFrame_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ScrollingFrame_7"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
+G2L["ScrollingFrame_7"]["Size"] = UDim2.new(1.00331, 0, 1, 0);
+G2L["ScrollingFrame_7"]["ScrollBarThickness"] = 1;
+G2L["ScrollingFrame_7"]["BackgroundTransparency"] = 1;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.description.ScrollingFrame.TextLabel
+G2L["TextLabel_8"] = Instance.new("TextLabel", G2L["ScrollingFrame_7"]);
+G2L["TextLabel_8"]["BorderSizePixel"] = 0;
+G2L["TextLabel_8"]["TextSize"] = 10;
+G2L["TextLabel_8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["TextLabel_8"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["TextLabel_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["TextLabel_8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_8"]["BackgroundTransparency"] = 1;
+G2L["TextLabel_8"]["AutomaticSize"] = Enum.AutomaticSize.XY;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option
+G2L["option_9"] = Instance.new("Frame", G2L["main_4"]);
+G2L["option_9"]["BorderSizePixel"] = 0;
+G2L["option_9"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+G2L["option_9"]["Size"] = UDim2.new(0.46823, 0, 0.68063, 0);
+G2L["option_9"]["Position"] = UDim2.new(0.00669, 0, 0.30366, 0);
+G2L["option_9"]["Name"] = [[option]];
+G2L["option_9"]["BackgroundTransparency"] = 0.6;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.UICorner
+G2L["UICorner_a"] = Instance.new("UICorner", G2L["option_9"]);
+G2L["UICorner_a"]["CornerRadius"] = UDim.new(0.04, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame
+G2L["ScrollingFrame_b"] = Instance.new("ScrollingFrame", G2L["option_9"]);
+G2L["ScrollingFrame_b"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+G2L["ScrollingFrame_b"]["BorderSizePixel"] = 0;
+G2L["ScrollingFrame_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ScrollingFrame_b"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
+G2L["ScrollingFrame_b"]["Size"] = UDim2.new(1.00357, 0, 1, 0);
+G2L["ScrollingFrame_b"]["ScrollBarThickness"] = 1;
+G2L["ScrollingFrame_b"]["BackgroundTransparency"] = 1;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.UIGridLayout
+G2L["UIGridLayout_c"] = Instance.new("UIGridLayout", G2L["ScrollingFrame_b"]);
+G2L["UIGridLayout_c"]["CellSize"] = UDim2.new(0.31, 0, 0.35, 0);
+G2L["UIGridLayout_c"]["CellPadding"] = UDim2.new(0.02, 0, 0.03, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.free
+G2L["free_d"] = Instance.new("Frame", G2L["ScrollingFrame_b"]);
+G2L["free_d"]["BorderSizePixel"] = 0;
+G2L["free_d"]["BackgroundColor3"] = Color3.fromRGB(30, 255, 0);
+G2L["free_d"]["ClipsDescendants"] = true;
+G2L["free_d"]["Size"] = UDim2.new(0.2, 0, 0.3, 0);
+G2L["free_d"]["Name"] = [[free]];
+G2L["free_d"]["BackgroundTransparency"] = 0.3;
+G2L["free_d"]["Visible"] = false;
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.free.UICorner
+G2L["UICorner_e"] = Instance.new("UICorner", G2L["free_d"]);
+G2L["UICorner_e"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.free.ImageButton
+G2L["ImageButton_f"] = Instance.new("ImageButton", G2L["free_d"]);
+G2L["ImageButton_f"]["BorderSizePixel"] = 0;
+G2L["ImageButton_f"]["BackgroundTransparency"] = 1;
+G2L["ImageButton_f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ImageButton_f"]["Size"] = UDim2.new(0.98726, 0, 0.98901, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.free.TextLabel
+G2L["TextLabel_10"] = Instance.new("TextLabel", G2L["free_d"]);
+G2L["TextLabel_10"]["TextWrapped"] = true;
+G2L["TextLabel_10"]["BorderSizePixel"] = 0;
+G2L["TextLabel_10"]["TextScaled"] = true;
+G2L["TextLabel_10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_10"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["TextLabel_10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_10"]["BackgroundTransparency"] = 1;
+G2L["TextLabel_10"]["Size"] = UDim2.new(0.48215, 0, 0.1978, 0);
+G2L["TextLabel_10"]["Text"] = [[Free]];
+G2L["TextLabel_10"]["Position"] = UDim2.new(0.04592, 0, 0.06593, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.paid
+G2L["paid_11"] = Instance.new("Frame", G2L["ScrollingFrame_b"]);
+G2L["paid_11"]["BorderSizePixel"] = 0;
+G2L["paid_11"]["BackgroundColor3"] = Color3.fromRGB(244, 255, 0);
+G2L["paid_11"]["Size"] = UDim2.new(0.2, 0, 0.3, 0);
+G2L["paid_11"]["Name"] = [[paid]];
+G2L["paid_11"]["BackgroundTransparency"] = 0.3;
+G2L["paid_11"]["Visible"] = false
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.paid.UICorner
+G2L["UICorner_12"] = Instance.new("UICorner", G2L["paid_11"]);
+G2L["UICorner_12"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.paid.ImageButton
+G2L["ImageButton_13"] = Instance.new("ImageButton", G2L["paid_11"]);
+G2L["ImageButton_13"]["BorderSizePixel"] = 0;
+G2L["ImageButton_13"]["BackgroundTransparency"] = 1;
+G2L["ImageButton_13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ImageButton_13"]["Size"] = UDim2.new(0.98726, 0, 0.98901, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.option.ScrollingFrame.paid.TextLabel
+G2L["TextLabel_14"] = Instance.new("TextLabel", G2L["paid_11"]);
+G2L["TextLabel_14"]["TextWrapped"] = true;
+G2L["TextLabel_14"]["BorderSizePixel"] = 0;
+G2L["TextLabel_14"]["TextScaled"] = true;
+G2L["TextLabel_14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_14"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["TextLabel_14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_14"]["BackgroundTransparency"] = 1;
+G2L["TextLabel_14"]["Size"] = UDim2.new(0.48215, 0, 0.1978, 0);
+G2L["TextLabel_14"]["Text"] = [[Paid]];
+G2L["TextLabel_14"]["Position"] = UDim2.new(0.04592, 0, 0.06593, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.UICorner
+G2L["UICorner_15"] = Instance.new("UICorner", G2L["main_4"]);
+G2L["UICorner_15"]["CornerRadius"] = UDim.new(0.03, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.run
+G2L["run_16"] = Instance.new("Frame", G2L["main_4"]);
+G2L["run_16"]["BorderSizePixel"] = 0;
+G2L["run_16"]["BackgroundColor3"] = Color3.fromRGB(6, 0, 235);
+G2L["run_16"]["Size"] = UDim2.new(0.50502, 0, 0.14136, 0);
+G2L["run_16"]["Position"] = UDim2.new(0.48829, 0, 0.8377, 0);
+G2L["run_16"]["Name"] = [[run]];
+G2L["run_16"]["BackgroundTransparency"] = 0.3;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.run.UICorner
+G2L["UICorner_17"] = Instance.new("UICorner", G2L["run_16"]);
+G2L["UICorner_17"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.run.play
+G2L["play_18"] = Instance.new("ImageButton", G2L["run_16"]);
+G2L["play_18"]["BorderSizePixel"] = 0;
+G2L["play_18"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["play_18"]["BackgroundTransparency"] = 1;
+-- G2L["play_18"]["ImageContent"] = ;
+G2L["play_18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["play_18"]["Image"] = [[rbxassetid://6026663699]];
+G2L["play_18"]["Size"] = UDim2.new(0.99338, 0, 0.55556, 0);
+G2L["play_18"]["Name"] = [[play]];
+G2L["play_18"]["Position"] = UDim2.new(0.00662, 0, 0.25926, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.subfrme
+G2L["subfrme_19"] = Instance.new("Frame", G2L["main_4"]);
+G2L["subfrme_19"]["BorderSizePixel"] = 0;
+G2L["subfrme_19"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+G2L["subfrme_19"]["Size"] = UDim2.new(0.46823, 0, 0.15707, 0);
+G2L["subfrme_19"]["Position"] = UDim2.new(0.00669, 0, 0.12565, 0);
+G2L["subfrme_19"]["Name"] = [[subfrme]];
+G2L["subfrme_19"]["BackgroundTransparency"] = 0.6;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.subfrme.UICorner
+G2L["UICorner_1a"] = Instance.new("UICorner", G2L["subfrme_19"]);
+G2L["UICorner_1a"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.subfrme.icon
+G2L["icon_1b"] = Instance.new("ImageLabel", G2L["subfrme_19"]);
+G2L["icon_1b"]["BorderSizePixel"] = 0;
+G2L["icon_1b"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["icon_1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- G2L["icon_1b"]["ImageContent"] = ;
+G2L["icon_1b"]["Image"] = [[rbxassetid://11774242795]];
+G2L["icon_1b"]["Size"] = UDim2.new(0.13571, 0, 0.63333, 0);
+G2L["icon_1b"]["Name"] = [[icon]];
+G2L["icon_1b"]["Position"] = UDim2.new(0.05, 0, 0.16667, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.subfrme.icon.UICorner
+G2L["UICorner_1c"] = Instance.new("UICorner", G2L["icon_1b"]);
+G2L["UICorner_1c"]["CornerRadius"] = UDim.new(0.3, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.subfrme.TextLabel
+G2L["TextLabel_1d"] = Instance.new("TextLabel", G2L["subfrme_19"]);
+G2L["TextLabel_1d"]["TextWrapped"] = true;
+G2L["TextLabel_1d"]["BorderSizePixel"] = 0;
+G2L["TextLabel_1d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["TextLabel_1d"]["TextScaled"] = true;
+G2L["TextLabel_1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["TextLabel_1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextLabel_1d"]["BackgroundTransparency"] = 1;
+G2L["TextLabel_1d"]["Size"] = UDim2.new(0.69286, 0, 0.3, 0);
+G2L["TextLabel_1d"]["Text"] = [[@ULC]];
+G2L["TextLabel_1d"]["Position"] = UDim2.new(0.21429, 0, 0.33333, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.closebar
+G2L["closebar_1e"] = Instance.new("Frame", G2L["main_4"]);
+G2L["closebar_1e"]["BorderSizePixel"] = 0;
+G2L["closebar_1e"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+G2L["closebar_1e"]["Size"] = UDim2.new(0.06355, 0, 0.09948, 0);
+G2L["closebar_1e"]["Position"] = UDim2.new(0.92642, 0, 0.01047, 0);
+G2L["closebar_1e"]["Name"] = [[closebar]];
+G2L["closebar_1e"]["BackgroundTransparency"] = 0.6;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.closebar.UICorner
+G2L["UICorner_1f"] = Instance.new("UICorner", G2L["closebar_1e"]);
+G2L["UICorner_1f"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.closebar.TextButton
+G2L["TextButton_20"] = Instance.new("TextButton", G2L["closebar_1e"]);
+G2L["TextButton_20"]["TextWrapped"] = true;
+G2L["TextButton_20"]["BorderSizePixel"] = 0;
+G2L["TextButton_20"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextButton_20"]["TextScaled"] = true;
+G2L["TextButton_20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextButton_20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["TextButton_20"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["TextButton_20"]["BackgroundTransparency"] = 1;
+G2L["TextButton_20"]["Size"] = UDim2.new(0.89474, 0, 0.78947, 0);
+G2L["TextButton_20"]["Text"] = [[X]];
+G2L["TextButton_20"]["Position"] = UDim2.new(0.05263, 0, 0.10526, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.bar
+G2L["bar_21"] = Instance.new("Frame", G2L["main_4"]);
+G2L["bar_21"]["BorderSizePixel"] = 0;
+G2L["bar_21"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+G2L["bar_21"]["Size"] = UDim2.new(0.84281, 0, 0.09948, 0);
+G2L["bar_21"]["Position"] = UDim2.new(0.00669, 0, 0.01047, 0);
+G2L["bar_21"]["Name"] = [[bar]];
+G2L["bar_21"]["BackgroundTransparency"] = 0.6;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.bar.label
+G2L["label_22"] = Instance.new("TextLabel", G2L["bar_21"]);
+G2L["label_22"]["TextWrapped"] = true;
+G2L["label_22"]["BorderSizePixel"] = 0;
+G2L["label_22"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["label_22"]["TextScaled"] = true;
+G2L["label_22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["label_22"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["label_22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["label_22"]["BackgroundTransparency"] = 1;
+G2L["label_22"]["Size"] = UDim2.new(0.98016, 0, 0.63158, 0);
+G2L["label_22"]["Text"] = [[Im_Patrick | untitled]];
+G2L["label_22"]["Name"] = [[label]];
+G2L["label_22"]["Position"] = UDim2.new(0.0873, 0, 0.15789, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.bar.UICorner
+G2L["UICorner_23"] = Instance.new("UICorner", G2L["bar_21"]);
+G2L["UICorner_23"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.bar.icon
+G2L["icon_24"] = Instance.new("ImageLabel", G2L["bar_21"]);
+G2L["icon_24"]["BorderSizePixel"] = 0;
+G2L["icon_24"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["icon_24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- G2L["icon_24"]["ImageContent"] = ;
+G2L["icon_24"]["Image"] = [[rbxassetid://96581271712752]];
+G2L["icon_24"]["Size"] = UDim2.new(0.0754, 0, 1, 0);
+G2L["icon_24"]["BackgroundTransparency"] = 1;
+G2L["icon_24"]["Name"] = [[icon]];
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.teleport
+G2L["teleport_25"] = Instance.new("Frame", G2L["main_4"]);
+G2L["teleport_25"]["BorderSizePixel"] = 0;
+G2L["teleport_25"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+G2L["teleport_25"]["Size"] = UDim2.new(0.06355, 0, 0.09948, 0);
+G2L["teleport_25"]["Position"] = UDim2.new(0.85619, 0, 0.01047, 0);
+G2L["teleport_25"]["Name"] = [[teleport]];
+G2L["teleport_25"]["BackgroundTransparency"] = 0.6;
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.teleport.UICorner
+G2L["UICorner_26"] = Instance.new("UICorner", G2L["teleport_25"]);
+G2L["UICorner_26"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.main.teleport.ImageButton
+G2L["ImageButton_27"] = Instance.new("ImageButton", G2L["teleport_25"]);
+G2L["ImageButton_27"]["BorderSizePixel"] = 0;
+G2L["ImageButton_27"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["ImageButton_27"]["BackgroundTransparency"] = 1;
+-- G2L["ImageButton_27"]["ImageContent"] = ;
+G2L["ImageButton_27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ImageButton_27"]["Image"] = [[rbxassetid://7943832652]];
+G2L["ImageButton_27"]["Size"] = UDim2.new(0.78947, 0, 0.84211, 0);
+G2L["ImageButton_27"]["Position"] = UDim2.new(0.10526, 0, 0.10526, 0);
+
+
+-- Players.thepatrickstarss.PlayerGui.ScreenGui.layer.UIAspectRatioConstraint
+G2L["UIAspectRatioConstraint_28"] = Instance.new("UIAspectRatioConstraint", G2L["layer_2"]);
+G2L["UIAspectRatioConstraint_28"]["AspectRatio"] = 1.55838;
+
+
+
+return function(title, des, paidfree, call)
+	local title = title or "untitled"
+	local paidfree = paidfree or {}
+
+	local gui = G2L["ScreenGui_1"]
+	local main = gui.layer.main
+	local bar = main.bar
+	local label = bar.label
+	local description = main.description
+	local deslabel = description.ScrollingFrame.TextLabel
+	local option = main.option
+	local scoption = option.ScrollingFrame
+	local run = main.run
+	local teleport = main.teleport
+	local closebar = main.closebar
+	
+	local free = scoption.free:Clone()
+	local paid = scoption.paid:Clone()
+	
+	label.Text = "Im_Patrick | " .. title
+	deslabel.Text = des or "nothing"
+	
+	if paidfree.free then
+		task.spawn(function()
+			for I,v in pairs(paidfree.free) do
+				local frame = free:Clone()
+				frame.Parent = scoption
+				frame.Visible = true
+				frame.ImageButton.Image = "rbxthumb://type=Asset&id=" .. tostring(v) .. "&w=150&h=150"
+			end
+		end)
+	end
+	
+	if paidfree.paid then
+		task.spawn(function()
+			for I,v in pairs(paidfree.paid) do
+				local frame = paid:Clone()
+				frame.Parent = scoption
+				frame.Visible = true
+				frame.ImageButton.Image = "rbxthumb://type=Asset&id=" .. tostring(v) .. "&w=150&h=150"
+			end
+		end)
+	end
+	
+	teleport.ImageButton.MouseButton1Click:Connect(function()
+		game:GetService("TeleportService"):Teleport(136733829568616, game:GetService("Players").LocalPlayer)
+	end)
+	
+	closebar.TextButton.MouseButton1Click:Connect(function()
+		gui:Destroy()
+	end)
+	
+	
+	run.play.MouseButton1Click:Connect(function()
+		if call then
+			gui:Destroy()
+			pcall(call)
+		end
+	end)
+	
+	return gui
+end
